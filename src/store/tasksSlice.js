@@ -7,7 +7,7 @@ const tasksSlice = createSlice({
     reducers: {
         addTask: (state, action) => {
             const task = action.payload;
-			task.id = nanoid();
+            task.id = nanoid();
             state.push(task);
         },
         editTask: (state, action) => {

@@ -20,7 +20,7 @@ const TaskList = ({ openModal }) => {
                 {tasks.map((task) => (
                     <li key={task.id} className='list-group-item'>
                         <div className='d-flex justify-content-between align-items-center flex-grow-1'>
-                        <div className='w-75'>
+                            <div className='w-75'>
                                 <input
                                     type='checkbox'
                                     checked={task.completed}

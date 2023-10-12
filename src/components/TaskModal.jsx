@@ -39,9 +39,7 @@ const TaskModal = ({ closeModal, taskToEdit }) => {
                 <div className='modal-content'>
                     <div className='modal-header'>
                         <h5 className='modal-title'>
-                            {taskToEdit
-                                ? 'Edit Task'
-                                : 'Add Task'}
+                            {taskToEdit ? 'Edit Task' : 'Add Task'}
                         </h5>
                         <button
                             type='button'
