@@ -1,8 +1,31 @@
-# React + Vite
+# Task Management Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This web application is developed using React with Redux Toolkit for state management. The app allows users to add, edit, delete, and mark tasks as completed.
 
-Currently, two official plugins are available:
+## Technologies
+- [React](https://reactjs.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [nanoid](https://github.com/ai/nanoid)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
+### Home Page
+- Displaying a list of tasks with the ability to sort by status (completed/uncompleted).
+- Displaying the title, description, and status for each task.
+- Adding an "Add Task" button that opens a modal for creating a new task.
+
+### Task Creation/Editing Modal
+- Ability to add new tasks with a title, description, and status.
+- Ability to edit existing tasks.
+- Field validation (the title cannot be empty).
+
+### Task Functionality
+- Ability to mark tasks as completed or uncompleted.
+- Ability to edit the title and description of tasks.
+- Ability to delete tasks.
+
+## Data Storage
+- Local state management using Redux.
+
+## Link to the Project
+- [Project on GitHub](https://task-manager-u1w5.onrender.com/)
