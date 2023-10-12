@@ -22,7 +22,7 @@ function App() {
             style={{ minHeight: '100vh' }}>
             <div className='p-5 rounded w-50 bg-secondary'>
                 <h1 className='mb-4'>Tasks List</h1>
-                <Button variant='primary mb-4' onClick={openModal}>
+                <Button variant='primary mb-4' onClick={() => openModal(null)}>
                     Add Task
                 </Button>
                 <div>
