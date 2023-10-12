@@ -1,7 +1,8 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleTaskStatus, deleteTask } from '../store/tasksSlice';
 
-const TaskList = () => {
+// eslint-disable-next-line react/prop-types
+const TaskList = ({ openModal }) => {
     const tasks = useSelector((state) => state.tasks);
     const dispatch = useDispatch();
 
@@ -44,6 +45,11 @@ const TaskList = () => {
                                 {task.description}
                             </p>
                         </div>
+                        <button
+                            className='btn btn-success btn-sm'
+                            onClick={() => openModal(task)}>
+                            Edit
+                        </button>
                         <button
                             className='btn btn-danger btn-sm'
                             onClick={() => handleDeleteTask(task.id)}>

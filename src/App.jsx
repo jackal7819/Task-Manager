@@ -5,8 +5,10 @@ import { Container, Button } from 'react-bootstrap';
 
 function App() {
     const [showModal, setShowModal] = useState(false);
+	const [taskToEdit, setTaskToEdit] = useState(null);
 
-    const openModal = () => {
+    const openModal = (task) => {
+		setTaskToEdit(task);
         setShowModal(true);
     };
 
@@ -24,8 +26,8 @@ function App() {
                     Add Task
                 </Button>
                 <div>
-                    <TaskList />
-                    {showModal && <TaskModal closeModal={closeModal} />}
+                    <TaskList openModal={openModal} closeModal={closeModal} />
+                    {showModal && <TaskModal closeModal={closeModal} taskToEdit={taskToEdit} />}
                 </div>
             </div>
         </Container>

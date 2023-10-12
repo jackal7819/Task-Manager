@@ -27,5 +27,5 @@ This web application is developed using React with Redux Toolkit for state manag
 ## Data Storage
 - Local state management using Redux.
 
-## Link to the Project
-- [Project on GitHub](https://task-manager-u1w5.onrender.com/)
+## Link to the Live Project
+- [View Live Project](https://task-manager-u1w5.onrender.com/)
